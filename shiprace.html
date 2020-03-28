@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <title>RED vs BLUE</title>
+
+   
+</head>
+<body>
+  <center><section id="main">
+    <div class="container">
+        <br>
+
+<!-- #ec4639 -->
+
+<div class="col-md-8" >  
+    <div class="container p-3 my-3 bg-primary text-white">
+        <h3>Choose Your Ship </h3>
+        <form name="selectship" action="">
+
+
+          <div class="radio-toolbar">
+      
+      
+            <input type="radio" id="radiored" name="radioShip" value="red">
+            <label for="radiored">Red Ship</label>
+        
+            <input type="radio" id="radioblue" name="radioShip" value="blue">
+            <label for="radioblue">Blue Ship</label> 
+        </div>
+        <p>And now click on Start let's see who will be the winner.</p>
+       <center> 
+         <button type="button" class="btn btn-danger"  onclick='openmodal()'>Start</button>
+        </center>
+
+        </form>
+      
+    </div>
+
+</div>
+</div>
+    <br>
+  </section>
+    
+
+</center>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" id="modal-dialogid">
+    <div class="modal-content">
+      <div class="modal-header" id="myModalHedaer">
+      
+        <h6 class="modal-title" id="myModalLabel">Red vs Blue</h6>
+      </div>
+      <div class="modal-body" id='myContainer'>
+        <!-- Game Start-->
+          
+<div >
+  <img id = "myAnimation" src="img/redship.png" alt="red ship png">
+</div>
+<div>
+      <img id = "myBox" src="img/blueship.png" alt="blue ship png">
+</div>
+<div id ="myAnimationline"></div>
+<div id ="myBoxline"></div>
+
+
+<!-- Game End-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        <button type="button" class="btn btn-primary"  onclick="startplaying()">Start Game</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="myModalshowprize" class="modal fade" role="dialog">
+  <div  class="modal-dialog">
+    <!-- Modal content-->
+    <div id='myModalshow' class="modal-content">
+      <div class="modal-body">
+      
+        <h3 class="glow" id='displaytheresult'></h3>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
