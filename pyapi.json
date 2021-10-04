@@ -1,0 +1,5 @@
+{
+    "statusCode": 200,
+    "payload": {"response": {"status": "200", "message": ""},
+ "data": {"lan": "012831231", "branch": "234", "moratorium": "May,June,July", "external_hl_lap_enquiry": "No", "proposed_roi": [{"value": "8.5", "revised_emi_pmi": "100000", "revised_tenure": "100"}, {"value": "8.45", "revised_emi_pmi": "90000", "revised_tenure": "90"}, {"value": "8.4", "revised_emi_pmi": "80000", "revised_tenure": "72"}], "conversion_fee_lower_limit": "1", "conversion_fee_upper_limit": "2"}}
+}
